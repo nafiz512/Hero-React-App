@@ -1,0 +1,272 @@
+[
+    {
+        "image": "https://play-lh.googleusercontent.com/wUZp2gNvX3mLkmzhq2FyTVSwRdtfWC-Fcx0lt8Xo1TxufvThvbAxgty7WpfARX6tLMxG=w240-h480-rw",
+        "title": "TaskMaster Pro",
+        "companyName": "Productivity Inc.",
+        "id": 1,
+        "description": "TaskMaster Pro helps you manage daily tasks with smart reminders, deadlines, and priority sorting. Boost your productivity with seamless organization tools.",
+        "size": 25,
+        "reviews": 452,
+        "ratingAvg": 4.3,
+        "downloads": 120000,
+        "ratings": [
+            { "name": "1 star", "count": 12 },
+            { "name": "2 star", "count": 20 },
+            { "name": "3 star", "count": 80 },
+            { "name": "4 star", "count": 180 },
+            { "name": "5 star", "count": 160 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=600",
+        "title": "FitJourney",
+        "companyName": "HealthWave",
+        "id": 2,
+        "description": "FitJourney supports your fitness goals with guided workouts, progress charts, and meal tracking. Build consistent habits and track your transformation.",
+        "size": 35,
+        "reviews": 985,
+        "ratingAvg": 4.7,
+        "downloads": 450000,
+        "ratings": [
+            { "name": "1 star", "count": 15 },
+            { "name": "2 star", "count": 25 },
+            { "name": "3 star", "count": 50 },
+            { "name": "4 star", "count": 250 },
+            { "name": "5 star", "count": 645 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600",
+        "title": "PhotoMagic",
+        "companyName": "SnapTech",
+        "id": 3,
+        "description": "PhotoMagic lets you apply stunning filters, create collages, and enhance portraits with AI-powered editing tools. Capture memories beautifully every time.",
+        "size": 48,
+        "reviews": 2100,
+        "ratingAvg": 4.5,
+        "downloads": 800000,
+        "ratings": [
+            { "name": "1 star", "count": 30 },
+            { "name": "2 star", "count": 45 },
+            { "name": "3 star", "count": 120 },
+            { "name": "4 star", "count": 800 },
+            { "name": "5 star", "count": 1105 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600",
+        "title": "BudgetBuddy",
+        "companyName": "MoneySmart",
+        "id": 4,
+        "description": "BudgetBuddy helps you track expenses, set financial goals, and analyze spending habits. Stay financially healthy and in control of your budget.",
+        "size": 22,
+        "reviews": 530,
+        "ratingAvg": 4.2,
+        "downloads": 230000,
+        "ratings": [
+            { "name": "1 star", "count": 10 },
+            { "name": "2 star", "count": 18 },
+            { "name": "3 star", "count": 85 },
+            { "name": "4 star", "count": 240 },
+            { "name": "5 star", "count": 177 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600",
+        "title": "LanguageLift",
+        "companyName": "LinguaFlow",
+        "id": 5,
+        "description": "LanguageLift provides interactive lessons, vocabulary games, and pronunciation practice to help you learn languages faster and retain more effectively.",
+        "size": 40,
+        "reviews": 1200,
+        "ratingAvg": 4.6,
+        "downloads": 500000,
+        "ratings": [
+            { "name": "1 star", "count": 20 },
+            { "name": "2 star", "count": 30 },
+            { "name": "3 star", "count": 90 },
+            { "name": "4 star", "count": 360 },
+            { "name": "5 star", "count": 700 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600",
+        "title": "WeatherWise",
+        "companyName": "SkyCast",
+        "id": 6,
+        "description": "WeatherWise delivers real-time forecasts, radar views, and extreme weather alerts. Plan your day with accurate weather predictions anywhere.",
+        "size": 28,
+        "reviews": 840,
+        "ratingAvg": 4.4,
+        "downloads": 310000,
+        "ratings": [
+            { "name": "1 star", "count": 18 },
+            { "name": "2 star", "count": 25 },
+            { "name": "3 star", "count": 70 },
+            { "name": "4 star", "count": 300 },
+            { "name": "5 star", "count": 427 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=600",
+        "title": "SleepTrack",
+        "companyName": "RestWell",
+        "id": 7,
+        "description": "SleepTrack monitors your sleep cycles, detects snoring, and provides tips for better rest. Improve your sleep quality and wake up refreshed.",
+        "size": 30,
+        "reviews": 670,
+        "ratingAvg": 4.1,
+        "downloads": 190000,
+        "ratings": [
+            { "name": "1 star", "count": 22 },
+            { "name": "2 star", "count": 35 },
+            { "name": "3 star", "count": 100 },
+            { "name": "4 star", "count": 220 },
+            { "name": "5 star", "count": 293 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600",
+        "title": "FoodieFinder",
+        "companyName": "DineOut Labs",
+        "id": 8,
+        "description": "FoodieFinder helps you explore nearby restaurants, browse menus, and view ratings. Find the perfect place for every craving in seconds.",
+        "size": 55,
+        "reviews": 1540,
+        "ratingAvg": 4.5,
+        "downloads": 620000,
+        "ratings": [
+            { "name": "1 star", "count": 25 },
+            { "name": "2 star", "count": 40 },
+            { "name": "3 star", "count": 150 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 825 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?w=600",
+        "title": "MindSpace",
+        "companyName": "ZenTech",
+        "id": 9,
+        "description": "MindSpace provides guided meditations, focus exercises, and daily reflections. Reduce stress and develop mindfulness wherever you are.",
+        "size": 20,
+        "reviews": 900,
+        "ratingAvg": 4.7,
+        "downloads": 275000,
+        "ratings": [
+            { "name": "1 star", "count": 10 },
+            { "name": "2 star", "count": 15 },
+            { "name": "3 star", "count": 60 },
+            { "name": "4 star", "count": 300 },
+            { "name": "5 star", "count": 515 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=600",
+        "title": "NewsPulse",
+        "companyName": "InfoStream",
+        "id": 10,
+        "description": "NewsPulse brings you trending news, personalized topics, and live updates from trusted sources. Stay informed anytime, anywhere.",
+        "size": 45,
+        "reviews": 1420,
+        "ratingAvg": 4.2,
+        "downloads": 410000,
+        "ratings": [
+            { "name": "1 star", "count": 30 },
+            { "name": "2 star", "count": 50 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 600 },
+            { "name": "5 star", "count": 540 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1598514982923-9ffcb3b93b0d?w=500",
+        "title": "TaskPilot",
+        "companyName": "BluePeak Labs",
+        "id": 11,
+        "description": "TaskPilot is a modern productivity manager designed to help you track your goals and daily tasks efficiently. With intelligent reminders and progress insights, it helps you stay focused and organized throughout the day.",
+        "size": 42,
+        "reviews": 1120,
+        "ratingAvg": 4.4,
+        "downloads": 75000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 80 },
+            { "name": "3 star", "count": 160 },
+            { "name": "4 star", "count": 380 },
+            { "name": "5 star", "count": 460 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1629909615184-74f495363b29?w=500",
+        "title": "MindSpace",
+        "companyName": "Lumos Studio",
+        "id": 12,
+        "description": "MindSpace offers guided meditations, breathing exercises, and stress management tools for a balanced lifestyle. Designed for busy professionals, it helps users create daily mindfulness routines with ease.",
+        "size": 55,
+        "reviews": 2680,
+        "ratingAvg": 4.8,
+        "downloads": 145000,
+        "ratings": [
+            { "name": "1 star", "count": 30 },
+            { "name": "2 star", "count": 60 },
+            { "name": "3 star", "count": 140 },
+            { "name": "4 star", "count": 490 },
+            { "name": "5 star", "count": 1960 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1612831662375-295c1003d3ca?w=500",
+        "title": "FitTrack",
+        "companyName": "ActiveCore Inc.",
+        "id": 13,
+        "description": "FitTrack is your all-in-one fitness tracker that helps you monitor workouts, calories, and sleep patterns. It provides real-time insights to keep you motivated and consistent with your health goals.",
+        "size": 63,
+        "reviews": 3450,
+        "ratingAvg": 4.6,
+        "downloads": 195000,
+        "ratings": [
+            { "name": "1 star", "count": 110 },
+            { "name": "2 star", "count": 160 },
+            { "name": "3 star", "count": 340 },
+            { "name": "4 star", "count": 780 },
+            { "name": "5 star", "count": 2060 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500",
+        "title": "SnapChef",
+        "companyName": "Culinex Ltd.",
+        "id": 14,
+        "description": "SnapChef helps you discover recipes instantly using ingredients you already have. Simply snap a photo of your fridge, and the app recommends delicious meal ideas with step-by-step cooking guides.",
+        "size": 49,
+        "reviews": 1740,
+        "ratingAvg": 4.3,
+        "downloads": 88000,
+        "ratings": [
+            { "name": "1 star", "count": 70 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 230 },
+            { "name": "4 star", "count": 520 },
+            { "name": "5 star", "count": 800 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1508948956644-0017e845d797?w=500",
+        "title": "TravelMate",
+        "companyName": "Wanderly Apps",
+        "id": 15,
+        "description": "TravelMate is your smart companion for exploring new places. It offers offline maps, language translation, and budget tracking to make your adventures smooth and worry-free wherever you go.",
+        "size": 71,
+        "reviews": 2210,
+        "ratingAvg": 4.7,
+        "downloads": 122000,
+        "ratings": [
+            { "name": "1 star", "count": 90 },
+            { "name": "2 star", "count": 110 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 630 },
+            { "name": "5 star", "count": 1160 }
+        ]
+    }
+]

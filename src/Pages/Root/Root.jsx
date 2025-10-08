@@ -1,17 +1,22 @@
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigation } from 'react-router';
 import Navbar from '../../Components/Header/Navbar';
 import Footer from '../../Components/Footer/Footer';
+import LoadingEffect from '../LoadingEffect/LoadingEffect';
 
 const Root = () => {
+    const navigation = useNavigation();
+
     return (
-        <div>
-            <Navbar></Navbar>
-            <div className="max-w-7xl mx-auto">
-                <Outlet></Outlet>
+        <div className="relative min-h-screen flex flex-col">
+            <Navbar />
+
+            {navigation.state == 'loading' && <LoadingEffect></LoadingEffect>}
+            <div className="flex-grow">
+                <Outlet />
             </div>
 
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 };
