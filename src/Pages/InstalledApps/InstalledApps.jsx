@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import InstalledAppsList from './InstalledAppsList';
 import { useLoaderData } from 'react-router';
 
 const InstalledApps = () => {
-    let list = JSON.parse(localStorage.getItem('installed')) || [];
+    const [list, setlist] = useState(
+        JSON.parse(localStorage.getItem('installed')) || []
+    );
     let apps = useLoaderData();
     let Applist = apps.filter((el) => {
         return list.includes(el.id.toString());
     });
 
+    const handleUninstall = (id) => {
+        setlist(list.filter((el) => el != id));
+    };
+    localStorage.setItem('installed', JSON.stringify(list));
     return (
         <div>
             <div className="max-w-7xl mx-auto mt-15 ">
@@ -26,11 +32,12 @@ const InstalledApps = () => {
                     </h2>
                     <h2>sort by</h2>
                 </div>
-                <div className="grid gap-3 mt-6">
+                <div className="grid gap-3 my-6">
                     {Applist.map((app) => (
                         <InstalledAppsList
                             key={app.id}
                             app={app}
+                            handleUninstall={handleUninstall}
                         ></InstalledAppsList>
                     ))}
                 </div>

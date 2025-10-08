@@ -25,11 +25,12 @@ const AppDetails = () => {
     data2 = [...data2].reverse();
 
     let list = JSON.parse(localStorage.getItem('installed')) || [];
+    const [active, setActive] = useState(list.find((el) => el == id));
     const handleInstall = () => {
         list.push(id);
         localStorage.setItem('installed', JSON.stringify(list));
+        setActive(true);
     };
-    console.log(list);
 
     return (
         <div className="max-w-7xl mx-auto">
@@ -72,7 +73,7 @@ const AppDetails = () => {
                         <button
                             onClick={handleInstall}
                             className="btn btn-success text-lg mt-7 ml-7"
-                            disabled={list.find((el) => el == id)}
+                            disabled={active}
                         >
                             Install Now ({size} MB)
                         </button>
