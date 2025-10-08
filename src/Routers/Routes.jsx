@@ -4,6 +4,8 @@ import Root from '../Pages/Root/Root';
 import Home from '../Pages/Home/Home';
 import ErrorPage from '../Pages/ErrorPages/ErrorPage';
 import Apps from '../Pages/Apps/Apps';
+import AppDetails from '../Pages/Apps/AppDetails';
+import InstalledApps from '../Pages/InstalledApps/InstalledApps';
 
 const Routes = createBrowserRouter([
     {
@@ -24,12 +26,17 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/apps/:id',
-
-                element: <h1>details app</h1>,
+                loader: () => fetch('/AppData.json'),
+                element: <AppDetails />,
             },
             {
                 path: '/installation',
-                element: <h2>installation</h2>,
+                loader: () => fetch('/AppData.json'),
+                element: <InstalledApps />,
+            },
+            {
+                path: '*',
+                Component: ErrorPage,
             },
         ],
     },

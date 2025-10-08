@@ -1,11 +1,12 @@
 import React from 'react';
 import dicon from '../../assets/icon-downloads.png';
 import sicon from '../../assets/icon-ratings.png';
+import { Link } from 'react-router';
 
 const App = ({ app }) => {
     const { image, title, downloads, ratingAvg } = app;
     return (
-        <div>
+        <Link to={`/apps/${app.id}`}>
             <div className="justify-between card bg-base-100 max-w-96 shadow-sm h-full">
                 <div className=" flex items-center justify-center m-5 rounded-xl">
                     <img
@@ -29,7 +30,7 @@ const App = ({ app }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

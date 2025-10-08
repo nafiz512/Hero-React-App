@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import App from './App';
 
 const Apps = () => {
@@ -11,8 +11,6 @@ const Apps = () => {
         ? apps.filter((el) => el.title.toLowerCase().includes(toMatch))
         : apps;
     const handleSearch = (e) => {
-        console.log(e.target.value);
-
         setSearch(e.target.value);
     };
 
@@ -38,7 +36,7 @@ const Apps = () => {
                     name="search"
                     required
                     placeholder="Search"
-                    className="border-1 border-gray-400 rounded-sm pl-4"
+                    className="border-1 border-gray-400 rounded-sm pl-4 bg-gray-100"
                 />
             </div>
             <div className="grid grid-cols-4 gap-3 mt-6">

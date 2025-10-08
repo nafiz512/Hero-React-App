@@ -7,7 +7,7 @@ import logo from '../../assets/logo.png';
 const Navbar = () => {
     const links = (
         <>
-            <li>
+            <li className="text-xl">
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -17,7 +17,7 @@ const Navbar = () => {
                     Home
                 </NavLink>
             </li>
-            <li>
+            <li className="text-xl">
                 <NavLink
                     to="/apps"
                     className={({ isActive }) =>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     Apps
                 </NavLink>
             </li>
-            <li>
+            <li className="text-xl">
                 <NavLink
                     to="/installation"
                     className={({ isActive }) =>
