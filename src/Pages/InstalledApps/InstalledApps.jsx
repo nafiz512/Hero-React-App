@@ -4,16 +4,20 @@ import { useLoaderData } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 
 const InstalledApps = () => {
-    const [list, setlist] = useState(
+    const [list, setList] = useState(
         JSON.parse(localStorage.getItem('installed')) || []
     );
-    let apps = useLoaderData();
-    let Applist = apps.filter((el) => {
-        return list.includes(el.id.toString());
-    });
+    const apps = useLoaderData();
+
+    const [appList, setAppList] = useState(
+        apps.filter((el) => list.includes(el.id.toString()))
+    );
 
     const handleUninstall = (id, title) => {
-        setlist(list.filter((el) => el != id));
+        const updatedList = list.filter((el) => el != id);
+
+        setAppList(appList.filter((app) => app.id.toString() != id));
+        setList(updatedList);
         toast.success(`${title} is Uninstalled Successfully`, {
             position: 'top-center',
             autoClose: 3000,
@@ -25,6 +29,19 @@ const InstalledApps = () => {
             theme: 'light',
             //transition: Bounce,
         });
+    };
+    const handleSort = (type) => {
+        let sorted = [...appList];
+
+        if (type === 'ascending') {
+            sorted.sort((a, b) => a.downloads - b.downloads);
+        } else if (type === 'descending') {
+            sorted.sort((a, b) => b.downloads - a.downloads);
+        } else {
+            console.log('Invalid sort type');
+        }
+
+        setAppList(sorted);
     };
     localStorage.setItem('installed', JSON.stringify(list));
     return (
@@ -55,10 +72,23 @@ const InstalledApps = () => {
                     <h2 className="font-bold text-2xl">
                         ({list.length}) Apps Found
                     </h2>
-                    <h2>sort by</h2>
+                    <div>
+                        <select
+                            defaultValue="Sort by Downloads"
+                            className="select"
+                        >
+                            <option disabled={true}>Sort by Downloads</option>
+                            <option onClick={() => handleSort('ascending')}>
+                                Low-High
+                            </option>
+                            <option onClick={() => handleSort('descending')}>
+                                High-Low
+                            </option>
+                        </select>
+                    </div>
                 </div>
                 <div className="grid gap-3 my-6">
-                    {Applist.map((app) => (
+                    {appList.map((app) => (
                         <InstalledAppsList
                             key={app.id}
                             app={app}
