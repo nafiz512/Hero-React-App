@@ -1,4 +1,3 @@
-import React, { use } from 'react';
 import Banner from '../../Components/Banner/Banner';
 import Trendings from '../Trendings/Trendings';
 

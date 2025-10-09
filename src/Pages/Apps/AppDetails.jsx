@@ -3,14 +3,23 @@ import { useLoaderData, useParams } from 'react-router';
 import dicon from '../../assets/icon-downloads.png';
 import ricon from '../../assets/icon-ratings.png';
 import vicon from '../../assets/icon-review.png';
+import { ToastContainer, toast } from 'react-toastify';
 
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import AppNotFound from '../ErrorPages/AppNotFound';
 
 const AppDetails = () => {
     const { id } = useParams();
     const apps = useLoaderData();
 
+    let list = JSON.parse(localStorage.getItem('installed')) || [];
+    const [active, setActive] = useState(list.find((el) => el == id));
+
     const data = apps.find((el) => el.id == id);
+    if (!data) {
+        return <AppNotFound></AppNotFound>;
+    }
+
     const {
         title,
         image,
@@ -24,16 +33,39 @@ const AppDetails = () => {
     let data2 = data.ratings;
     data2 = [...data2].reverse();
 
-    let list = JSON.parse(localStorage.getItem('installed')) || [];
-    const [active, setActive] = useState(list.find((el) => el == id));
     const handleInstall = () => {
         list.push(id);
         localStorage.setItem('installed', JSON.stringify(list));
         setActive(true);
+        toast.success(`Yahoo !! ${title} is installed Successfully`, {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+            //transition: Bounce,
+        });
     };
 
     return (
         <div className="max-w-7xl mx-auto">
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                // transition={Bounce}
+            />
+
             <div className="flex mt-12 border-b border-gray-400 pb-10">
                 <div>
                     <img
@@ -75,7 +107,7 @@ const AppDetails = () => {
                             className="btn btn-success text-lg mt-7 ml-7"
                             disabled={active}
                         >
-                            Install Now ({size} MB)
+                            {active ? 'Installed' : `Install Now (${size} MB)`}
                         </button>
                     </div>
                 </div>

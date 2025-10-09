@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InstalledAppsList from './InstalledAppsList';
 import { useLoaderData } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify';
 
 const InstalledApps = () => {
     const [list, setlist] = useState(
@@ -11,12 +12,36 @@ const InstalledApps = () => {
         return list.includes(el.id.toString());
     });
 
-    const handleUninstall = (id) => {
+    const handleUninstall = (id, title) => {
         setlist(list.filter((el) => el != id));
+        toast.success(`${title} is Uninstalled Successfully`, {
+            position: 'top-center',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+            //transition: Bounce,
+        });
     };
     localStorage.setItem('installed', JSON.stringify(list));
     return (
         <div>
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                // transition={Bounce}
+            />
             <div className="max-w-7xl mx-auto mt-15 ">
                 <div className="space-y-5">
                     <h2 className="text-5xl font-bold text-center">

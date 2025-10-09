@@ -39,6 +39,23 @@ const Apps = () => {
                     className="border-1 border-gray-400 rounded-sm pl-4 bg-gray-100"
                 />
             </div>
+            <div
+                className={`${
+                    newList.length
+                        ? 'hidden'
+                        : 'flex flex-col space-y-8 py-10 justify-center items-center'
+                } `}
+            >
+                <h2 className=" text-5xl font-bold text-orange-800">
+                    No Apps Found
+                </h2>
+                <button
+                    onClick={() => ((newList = apps), setSearch(''))}
+                    className="btn btn-primary"
+                >
+                    Show All
+                </button>
+            </div>
             <div className="grid grid-cols-4 gap-3 mt-6">
                 {newList.map((app) => (
                     <App key={app.id} app={app}></App>

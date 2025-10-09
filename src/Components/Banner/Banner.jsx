@@ -2,6 +2,7 @@ import React from 'react';
 import google from '../../assets/google.png';
 import appstore from '../../assets/appstore.png';
 import hero from '../../assets/hero.png';
+import { Link } from 'react-router';
 
 const Banner = () => {
     return (
@@ -14,19 +15,29 @@ const Banner = () => {
                         Apps
                     </h1>
                     <p className="text-xl text-gray-500">
-                        At HERO.IO , we craft innovative apps designed to make
+                        At HERO.IO , we craft innovative apps designed to make
                         everyday life simpler, smarter, and more exciting.Our
                         goal is to turn your ideas into digital experiences that
                         truly make an impact.
                     </p>
                     <div className="space-x-4 mb-5">
-                        <button className="btn btn-soft py-5">
-                            <img src={google} alt="" />
-                            Google Play
-                        </button>
-                        <button className="btn btn-soft py-5">
-                            <img src={appstore} alt="" /> App store
-                        </button>
+                        <Link
+                            target="_blank"
+                            to={'https://play.google.com/store'}
+                        >
+                            <button className="btn btn-soft py-5">
+                                <img src={google} alt="" />
+                                Google Play
+                            </button>
+                        </Link>
+                        <Link
+                            target="_blank"
+                            to={'https://www.apple.com/app-store/'}
+                        >
+                            <button className="btn btn-soft py-5">
+                                <img src={appstore} alt="" /> App store
+                            </button>
+                        </Link>
                     </div>
                     <img src={hero} alt="" className="max-w-[800px]" />
                 </div>
