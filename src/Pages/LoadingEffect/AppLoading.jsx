@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-const LoadingEffect = () => {
+const AppLoading = () => {
     return (
-        <div className="max-w-7xl mx-auto mt-28">
+        <div>
             <div className="flex items-center justify-center">
                 <div className="animate-spin">
                     <img
@@ -17,4 +17,4 @@ const LoadingEffect = () => {
     );
 };
 
-export default LoadingEffect;
+export default AppLoading;

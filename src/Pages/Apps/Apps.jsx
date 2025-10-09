@@ -1,64 +1,85 @@
-import React, { useState } from 'react';
-import { Link, useLoaderData } from 'react-router';
+import React, { useState, useEffect } from 'react';
+import { useLoaderData } from 'react-router';
 import App from './App';
+
+import AppLoading from '../LoadingEffect/AppLoading';
 
 const Apps = () => {
     const apps = useLoaderData();
-
     const [search, setSearch] = useState('');
-    let toMatch = search.trim().toLocaleLowerCase();
-    let newList = toMatch
-        ? apps.filter((el) => el.title.toLowerCase().includes(toMatch))
-        : apps;
+    const [filteredApps, setFilteredApps] = useState(apps);
+    const [isSearching, setIsSearching] = useState(false);
+
     const handleSearch = (e) => {
-        setSearch(e.target.value);
+        const value = e.target.value;
+        setSearch(value);
+        setIsSearching(true);
+    };
+
+    useEffect(() => {
+        const toMatch = search.trim().toLowerCase();
+
+        const result = toMatch
+            ? apps.filter((el) => el.title.toLowerCase().includes(toMatch))
+            : apps;
+
+        setFilteredApps(result);
+
+        const timer = setTimeout(() => setIsSearching(false), 300);
+        return () => clearTimeout(timer);
+    }, [search, apps]);
+
+    const handleShowAll = () => {
+        setSearch('');
+        setFilteredApps(apps);
     };
 
     return (
-        <div className="max-w-7xl mx-auto mt-15 ">
+        <div className="max-w-7xl mx-auto mt-15">
+            {/* Header */}
             <div className="space-y-5">
                 <h2 className="text-5xl font-bold text-center">
                     Our All Applications
                 </h2>
                 <p className="text-center text-xl text-gray-500">
-                    Explore All Apps on the Market developed by us. We code for
-                    Millions
+                    Explore all apps on the market developed by us. We code for
+                    millions.
                 </p>
             </div>
+
+            {/* Search bar */}
             <div className="flex justify-between mt-8">
                 <h2 className="font-bold text-2xl">
-                    ({newList.length}) Apps Found
+                    ({filteredApps.length}) Apps Found
                 </h2>
                 <input
                     value={search}
                     onChange={handleSearch}
                     type="search"
                     name="search"
-                    required
                     placeholder="Search"
-                    className="border-1 border-gray-400 rounded-sm pl-4 bg-gray-100"
+                    className="border border-gray-400 rounded-sm pl-4 bg-gray-100"
                 />
             </div>
-            <div
-                className={`${
-                    newList.length
-                        ? 'hidden'
-                        : 'flex flex-col space-y-8 py-10 justify-center items-center'
-                } `}
-            >
-                <h2 className=" text-5xl font-bold text-orange-800">
-                    No Apps Found
-                </h2>
-                <button
-                    onClick={() => ((newList = apps), setSearch(''))}
-                    className="btn btn-primary"
-                >
-                    Show All
-                </button>
-            </div>
+
+            {/* Searching indicator */}
+            <div>{isSearching && <AppLoading></AppLoading>}</div>
+
+            {/* No results */}
+            {!filteredApps.length && !isSearching && (
+                <div className="flex flex-col space-y-6 py-10 justify-center items-center">
+                    <h2 className="text-4xl font-bold text-orange-800">
+                        No Apps Found
+                    </h2>
+                    <button onClick={handleShowAll} className="btn btn-primary">
+                        Show All
+                    </button>
+                </div>
+            )}
+
             <div className="grid grid-cols-4 gap-3 mt-6">
-                {newList.map((app) => (
-                    <App key={app.id} app={app}></App>
+                {filteredApps.map((app) => (
+                    <App key={app.id} app={app} />
                 ))}
             </div>
         </div>
