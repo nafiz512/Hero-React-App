@@ -11,7 +11,9 @@ const Banner = () => {
                 <div className="flex flex-col items-center justify-center text-center lg:px-40 gap-5">
                     <h1 className="lg:text-7xl text-5xl font-bold ">
                         We Build <br />
-                        <span className="text-[#632EE3]">Productive </span>
+                        <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                            Productive
+                        </span>
                         Apps
                     </h1>
                     <p className="text-xl text-gray-500">
@@ -44,7 +46,7 @@ const Banner = () => {
                     </figure>
                 </div>
             </div>
-            <div className="bg-[#632EE3] text-white text-center space-y-6 py-10">
+            <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white text-center space-y-6 py-10">
                 <h2 className="text-3xl lg:text-5xl font-bold">
                     Trusted by Millions, Built for You
                 </h2>

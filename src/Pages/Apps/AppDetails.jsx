@@ -48,7 +48,7 @@ const AppDetails = () => {
         setActive(true);
         toast.success(`Yahoo !! ${title} is installed Successfully`, {
             position: 'top-center',
-            autoClose: 5000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: false,
             pauseOnHover: true,
@@ -63,7 +63,7 @@ const AppDetails = () => {
         <div className="max-w-7xl mx-auto">
             <ToastContainer
                 position="top-center"
-                autoClose={5000}
+                autoClose={2000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick={false}

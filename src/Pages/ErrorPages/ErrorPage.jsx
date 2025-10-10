@@ -11,7 +11,7 @@ const ErrorPage = () => {
                 The page you are looking for is not available.
             </p>
             <Link to={-1}>
-                <button className="btn btn-primary text-2xl font-bold">
+                <button className="btn btn-primary bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-2xl font-bold">
                     Go back
                 </button>
             </Link>

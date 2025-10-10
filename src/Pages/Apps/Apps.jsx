@@ -71,7 +71,10 @@ const Apps = () => {
                     <h2 className="text-4xl font-bold text-orange-800">
                         No Apps Found
                     </h2>
-                    <button onClick={handleShowAll} className="btn btn-primary">
+                    <button
+                        onClick={handleShowAll}
+                        className="btn btn-primary bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
+                    >
                         Show All
                     </button>
                 </div>

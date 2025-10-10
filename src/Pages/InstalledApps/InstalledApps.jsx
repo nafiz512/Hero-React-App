@@ -20,7 +20,7 @@ const InstalledApps = () => {
         setList(updatedList);
         toast.success(`${title} is Uninstalled Successfully`, {
             position: 'top-center',
-            autoClose: 3000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: false,
             pauseOnHover: true,
@@ -48,7 +48,7 @@ const InstalledApps = () => {
         <div>
             <ToastContainer
                 position="top-center"
-                autoClose={3000}
+                autoClose={2000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick={false}
@@ -72,10 +72,10 @@ const InstalledApps = () => {
                     <h2 className="font-bold text-2xl">
                         ({list.length}) Apps Found
                     </h2>
-                    <div>
+                    <div className="pr-2 sm:pr-0">
                         <select
                             defaultValue="Sort by Downloads"
-                            className="select"
+                            className="select w-44 "
                         >
                             <option disabled={true}>Sort by Downloads</option>
                             <option onClick={() => handleSort('ascending')}>

@@ -18,7 +18,9 @@ const Trendings = () => {
                 ))}
             </div>
             <Link to={'/apps'}>
-                <button className="btn btn-primary text-2xl">Show All</button>
+                <button className="btn btn-primary bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-2xl">
+                    Show All
+                </button>
             </Link>
         </div>
     );

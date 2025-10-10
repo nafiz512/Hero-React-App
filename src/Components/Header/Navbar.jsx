@@ -7,7 +7,7 @@ import logo from '../../assets/logo.png';
 const Navbar = () => {
     const links = (
         <>
-            <li className="text-xl">
+            <li className="text-xl px-3 py-2 hover:bg-gray-300 rounded-lg">
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -17,17 +17,17 @@ const Navbar = () => {
                     Home
                 </NavLink>
             </li>
-            <li className="text-xl">
+            <li className="text-xl px-3 py-2 hover:bg-gray-300 rounded-lg">
                 <NavLink
                     to="/apps"
                     className={({ isActive }) =>
-                        isActive ? 'active-link' : ''
+                        isActive ? ' active-link pb-0.5' : ''
                     }
                 >
                     Apps
                 </NavLink>
             </li>
-            <li className="text-xl">
+            <li className="text-xl px-3 py-2 hover:bg-gray-300 rounded-lg">
                 <NavLink
                     to="/installation"
                     className={({ isActive }) =>
@@ -79,12 +79,12 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">{links}</ul>
+                    <ul className="flex ">{links}</ul>
                 </div>
                 <div className="navbar-end">
                     <Link
                         to={'https://github.com/nafiz512'}
-                        className="btn btn-primary"
+                        className="btn bg-linear-to-r btn-primary from-[#632EE3] to-[#9F62F2] "
                     >
                         <IoLogoGithub className="" size={24} /> Contribute
                     </Link>
