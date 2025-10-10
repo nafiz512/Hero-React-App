@@ -47,11 +47,12 @@ const Navbar = () => {
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost lg:hidden"
+                            className="btn btn-ghost bg-blue-300 lg:hidden"
                         >
                             <svg
+                                size={1}
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-7 w-7 "
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -66,7 +67,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                            className="menu font-bold dropdown-content bg-base-100 rounded-box z-1 mt-3 w-42  pl-3 shadow"
                         >
                             {links}
                         </ul>

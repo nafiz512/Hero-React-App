@@ -49,7 +49,7 @@ const Apps = () => {
 
             {/* Search bar */}
             <div className="flex justify-between mt-8">
-                <h2 className="font-bold text-2xl">
+                <h2 className="font-bold text-xl  lg:text-2xl">
                     ({filteredApps.length}) Apps Found
                 </h2>
                 <input
@@ -58,7 +58,7 @@ const Apps = () => {
                     type="search"
                     name="search"
                     placeholder="Search"
-                    className="border border-gray-400 rounded-sm pl-4 bg-gray-100"
+                    className="border border-gray-400 rounded-sm h-10 w-[200px] lg:w-xs pl-4 bg-gray-100"
                 />
             </div>
 
@@ -77,7 +77,7 @@ const Apps = () => {
                 </div>
             )}
 
-            <div className="grid grid-cols-4 gap-3 mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 mt-6 ml-1">
                 {filteredApps.map((app) => (
                     <App key={app.id} app={app} />
                 ))}

@@ -5,7 +5,16 @@ import ricon from '../../assets/icon-ratings.png';
 import vicon from '../../assets/icon-review.png';
 import { ToastContainer, toast } from 'react-toastify';
 
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+// import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    ResponsiveContainer,
+} from 'recharts';
 import AppNotFound from '../ErrorPages/AppNotFound';
 
 const AppDetails = () => {
@@ -66,16 +75,18 @@ const AppDetails = () => {
                 // transition={Bounce}
             />
 
-            <div className="flex mt-12 border-b border-gray-400 pb-10">
+            <div className=" flex flex-col justify-center items-center md:flex-row mt-12 border-b border-gray-400 pb-10">
                 <div>
-                    <img
-                        className="max-h-[350px] max-w-[350px]"
-                        src={image}
-                        alt=""
-                    />
+                    <figure>
+                        <img
+                            className="max-h-[350px] max-w-[350px]"
+                            src={image}
+                            alt=""
+                        />
+                    </figure>
                 </div>
                 <div className="w-full">
-                    <div className=" border-b border-gray-400 ml-7">
+                    <div className=" border-b border-gray-400 ml-3 lg:ml-7">
                         <h2 className="text-3xl">{title}</h2>
                         <p className="text-xl">
                             <span className="text-gray-500">Developed by </span>
@@ -84,21 +95,27 @@ const AppDetails = () => {
                             </span>
                         </p>
                     </div>
-                    <div className="flex gap-8 mt-7 ml-7">
+                    <div className="flex gap-8 mt-7 ml-3 lg:ml-7">
                         <div className="">
                             <img src={dicon} className="h-10" alt="" />
                             <h2 className="text-lg ">Downloads</h2>
-                            <h2 className="text-4xl font-bold">{downloads}</h2>
+                            <h2 className="text-3xl lg:text-4xl font-bold">
+                                {downloads}
+                            </h2>
                         </div>
                         <div className="">
                             <img src={ricon} className="h-10" alt="" />
                             <h2 className="text-lg ">Downloads</h2>
-                            <h2 className="text-4xl font-bold">{ratingAvg}</h2>
+                            <h2 className="text-3xl lg:text-4xl font-bold">
+                                {ratingAvg}
+                            </h2>
                         </div>
                         <div className="">
                             <img src={vicon} className="h-10" alt="" />
                             <h2 className="text-lg ">Downloads</h2>
-                            <h2 className="text-4xl font-bold">{reviews}</h2>
+                            <h2 className="text-3xl lg:text-4xl font-bold">
+                                {reviews}
+                            </h2>
                         </div>
                     </div>
                     <div>
@@ -112,25 +129,35 @@ const AppDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 px-2">
                 <h1 className="font-bold text-2xl">Raintings</h1>
-                <div>
-                    <BarChart
-                        width={1280}
-                        height={350}
-                        data={data2}
-                        layout="vertical"
-                    >
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                        <XAxis type="number" />
-                        <YAxis dataKey="name" type="category" />
-                        <Tooltip />
-                        <Bar dataKey="count" fill="#FF8811" barSize={30} />
-                    </BarChart>
+                <div className="w-full h-96">
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                            data={data2}
+                            layout="vertical"
+                            margin={{
+                                top: 20,
+                                right: 30,
+                                bottom: 20,
+                            }}
+                        >
+                            <CartesianGrid
+                                stroke="#ccc"
+                                strokeDasharray="5 5"
+                            />
+                            <XAxis type="number" />
+                            <YAxis dataKey="name" type="category" />
+                            <Tooltip />
+                            <Bar dataKey="count" fill="#FF8811" barSize={30} />
+                        </BarChart>
+                    </ResponsiveContainer>
                 </div>
             </div>
-            <h1 className="font-bold text-2xl">Description</h1>
-            <p>{description}</p>
+            <div className="px-3">
+                <h1 className="font-bold text-2xl">Description</h1>
+                <p>{description}</p>
+            </div>
         </div>
     );
 };
