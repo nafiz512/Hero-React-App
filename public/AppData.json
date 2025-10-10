@@ -144,21 +144,36 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/r6Bn6EVBjhtBxthp0Li3CQSOiOram9MULmQmWj-Sq34gcldjQvPrhnlI7MmuvegodfnU=w240-h480-rw",
-        "title": "MindSpace",
-        "companyName": "ZenTech",
+        "image": "https://i.ibb.co.com/hF7Z5tpJ/ninja.png",
+        "title": "TripNinja:Smart Travel Planner",
+        "companyName": "Wanderlust Tech",
         "id": 9,
-        "description": "MindSpace provides guided meditations, focus exercises, and daily reflections. Reduce stress and develop mindfulness wherever you are.",
-        "size": 20,
-        "reviews": 900,
-        "ratingAvg": 4.7,
-        "downloads": 275000,
+        "description": "TripNinja is your all-in-one travel command center, eliminating the stress of itinerary planning. It allows users to build comprehensive, custom itineraries with intuitive drag-and-drop functionality, consolidating flights, accommodations, sightseeing, and meetings into one centralized location. The app is a document vault, securely storing tickets, passports, insurance, and booking confirmations. Core features include Real-Time Travel Alerts for flight changes, weather, and local advisories, ensuring you're always prepared. The integrated Expense Tracker helps you allocate your travel budget wisely and monitor spending on the go. TripNinja’s smart suggestions offer recommendations based on your destination and interests. Crucially, the app includes Offline Support, making your entire itinerary, maps, and essential information accessible even without an internet connection, ensuring a seamless and worry-free travel experience.",
+        "size": 66,
+        "reviews": 19870,
+        "ratingAvg": 4.6,
+        "downloads": 2300000,
         "ratings": [
-            { "name": "1 star", "count": 10 },
-            { "name": "2 star", "count": 15 },
-            { "name": "3 star", "count": 60 },
-            { "name": "4 star", "count": 300 },
-            { "name": "5 star", "count": 515 }
+            {
+                "name": "5 star",
+                "count": 11570
+            },
+            {
+                "name": "4 star",
+                "count": 5400
+            },
+            {
+                "name": "3 star",
+                "count": 1800
+            },
+            {
+                "name": "2 star",
+                "count": 700
+            },
+            {
+                "name": "1 star",
+                "count": 400
+            }
         ]
     },
     {
@@ -198,23 +213,39 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1629909615184-74f495363b29?w=500",
-        "title": "MindSpace",
-        "companyName": "Lumos Studio",
-        "id": 12,
-        "description": "MindSpace offers guided meditations, breathing exercises, and stress management tools for a balanced lifestyle. Designed for busy professionals, it helps users create daily mindfulness routines with ease.",
-        "size": 55,
-        "reviews": 2680,
-        "ratingAvg": 4.8,
-        "downloads": 145000,
-        "ratings": [
-            { "name": "1 star", "count": 30 },
-            { "name": "2 star", "count": 60 },
-            { "name": "3 star", "count": 140 },
-            { "name": "4 star", "count": 490 },
-            { "name": "5 star", "count": 1960 }
-        ]
-    },
+    "image": "https://i.ibb.co.com/1HjjHTP/newsapp.jpg",
+    "title": "DailyRead:Trending News Digest",
+    "companyName": "InfoSage Media",
+    "id": 12,
+    "description": "DailyRead is the ultimate AI-powered news aggregator, providing a curated, high-quality, and distraction-free reading experience. The app leverages machine learning to create a highly Personalized News Feed tailored to your interests across global categories: politics, tech, finance, health, and more. Critical to its efficiency is the use of AI-Driven Clustering to group similar articles, eliminating repetition, and the AI Summaries feature which distills lengthy reports into concise, easy-to-digest key points. Users can select specific sources and topics to follow via Customizable Channels and receive real-time Topic Alerts for breaking stories. DailyRead's interface is clean and elegant, prioritizing readability. It also fosters community engagement through comment sections and polls, allowing readers to discuss and shape the narrative around the most talked-about topics.",
+    "size": 33,
+    "reviews": 15455,
+    "ratingAvg": 4.2,
+    "downloads": 1800000,
+    "ratings": [
+      {
+        "name": "5 star",
+        "count": 7055
+      },
+      {
+        "name": "4 star",
+        "count": 4600
+      },
+      {
+        "name": "3 star",
+        "count": 3000
+      },
+      {
+        "name": "2 star",
+        "count": 800
+      },
+      {
+        "name": "1 star",
+        "count": 1000
+      }
+    ]
+  },
+
     {
         "image": "https://play-lh.googleusercontent.com/5SLG2s107uPPgbkjFsKxdEMI8P85FDxZzZ2lXsryBxP3DhcH49ILOtW7verzgV6Xoavz",
         "title": "FitTrack",
