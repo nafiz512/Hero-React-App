@@ -1,8 +1,4 @@
-from pathlib import Path
-
-# Markdown content for README.md
-
-readme_content = """# 🧭 HERO React App
+# 🧭 HERO React App
 
 **HERO React App** is a modern web application designed to showcase, explore, and install productivity-oriented apps.  
 It focuses on clean UI, smooth navigation, and an engaging user experience — built with **React**, **Tailwind CSS**, **DaisyUI**, and **React Router**.
@@ -11,14 +7,7 @@ It focuses on clean UI, smooth navigation, and an engaging user experience — b
 
 ## 🚀 Live Demo
 
-🔗 [View Live on Netlify](#) ← _(Replace with your Netlify link)_
-
----
-
-## 🖼️ Preview
-
-![HERO React App Screenshot](./screenshot.png)  
-_(Add a real screenshot of your homepage here)_
+🔗 [View Live on Netlify](https://hero-app-nafiz.netlify.app)
 
 ---
 
@@ -48,4 +37,66 @@ _(Add a real screenshot of your homepage here)_
 
 ---
 
-## 🧩 Folder Structure
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/nafiz512/Hero-React-App.git
+    cd Hero-React-App
+    ```
+
+2. **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4. **Build for production**
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 🌐 Deployment on Netlify
+
+To fix **404 errors on page reload**:
+
+-   Add a `_redirects` file inside your `public/` folder:
+    ```
+    /*    /index.html   200
+    ```
+-   Then rebuild and redeploy.
+
+---
+
+## 📈 Future Improvements
+
+-   🔔 Add notification system
+-   🌙 Add dark/light theme toggle
+-   🧭 Add more detailed app categories
+-   💬 Add user reviews or comments section
+
+---
+
+## 🧑‍💻 Author
+
+**👤 Nafiz Muntasir**  
+Frontend Developer | React Enthusiast
+📧 Email: [nafizmuntasir512@gamil.com]  
+🐙 GitHub: [@nafiz512](https://github.com/nafiz512)
+
+---
+
+## 🪪 License
+
+This project is open-source and available under the [MIT License](LICENSE).
