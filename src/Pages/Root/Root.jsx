@@ -8,7 +8,7 @@ const Root = () => {
     const navigation = useNavigation();
 
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div>
             <Navbar />
 
             {navigation.state == 'loading' && <LoadingEffect></LoadingEffect>}
