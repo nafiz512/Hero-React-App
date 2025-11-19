@@ -11,6 +11,49 @@ It focuses on clean UI, smooth navigation, and an engaging user experience — b
 
 ---
 
+## 📚 Table of Contents
+
+-  About the Project
+
+-  Project Overview
+
+-  Key Features
+-  
+-  Tech Stack
+
+-  Dependencies
+
+-  Installation--setup
+
+-  Folder Structure
+
+-  Future Improvements
+
+-  Author
+
+-  License
+
+## 📌 About the Project
+
+HERO React App is a UI-focused web application that lets users browse and install apps.
+It emphasizes simplicity, clean visuals, interactivity, and smooth routing.
+The project also demonstrates modern React practices, reusable components, and proper routing techniques.
+
+## 📖 Project Overview
+
+-  The HERO App offers:
+
+-  A clean dashboard showing multiple apps
+
+-  An analytics section powered by Recharts
+
+-  App installation logic stored in LocalStorage
+
+-  Fully responsive SPA with animated UI
+
+-  Netlify-friendly routing configuration
+
+
 ## ✨ Features
 
 -   ⚡ **Single Page App (SPA)** built with React
@@ -66,6 +109,20 @@ It focuses on clean UI, smooth navigation, and an engaging user experience — b
     ```
 
 ---
+
+## Folder Structure
+
+Hero-React-App/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── utils/
+│   ├── hooks/
+│   └── assets/
+├── public/
+└── package.json
+
 
 ## 🌐 Deployment on Netlify
 
