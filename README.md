@@ -112,16 +112,17 @@ The project also demonstrates modern React practices, reusable components, and p
 
 ## Folder Structure
 
-Hero-React-App/
+hero-react-app/
 │
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── utils/
-│   ├── hooks/
-│   └── assets/
-├── public/
-└── package.json
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── hooks/         # Custom React hooks
+│   ├── utils/         # Utility functions
+│   └── assets/        # Static assets
+├── public/            # Public assets
+├── index.html         # Entry HTML file
+└── package.json       # Project dependencies
 
 
 ## 🌐 Deployment on Netlify
