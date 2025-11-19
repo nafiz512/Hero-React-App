@@ -111,7 +111,7 @@ The project also demonstrates modern React practices, reusable components, and p
 ---
 
 ## Folder Structure
-
+```
 hero-react-app/
 │
 ├── src/
@@ -123,7 +123,7 @@ hero-react-app/
 ├── public/            # Public assets
 ├── index.html         # Entry HTML file
 └── package.json       # Project dependencies
-
+```
 
 ## 🌐 Deployment on Netlify
 
