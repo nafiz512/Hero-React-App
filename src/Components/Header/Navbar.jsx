@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router';
-import { IoLogoGithub } from 'react-icons/io';
-import { NavLink } from 'react-router';
-import logo from '../../assets/logo.png';
+import React from "react";
+import { Link } from "react-router";
+import { IoLogoGithub } from "react-icons/io";
+import { NavLink } from "react-router";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
     const links = (
@@ -11,7 +11,7 @@ const Navbar = () => {
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
-                        isActive ? 'active-link' : ''
+                        isActive ? "active-link" : ""
                     }
                 >
                     Home
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <NavLink
                     to="/apps"
                     className={({ isActive }) =>
-                        isActive ? ' active-link pb-0.5' : ''
+                        isActive ? " active-link pb-0.5" : ""
                     }
                 >
                     Apps
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <NavLink
                     to="/installation"
                     className={({ isActive }) =>
-                        isActive ? 'active-link' : ''
+                        isActive ? "active-link" : ""
                     }
                 >
                     Installation
@@ -41,7 +41,7 @@ const Navbar = () => {
     );
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="px-[8%] navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div
@@ -73,7 +73,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <Link to={'/'} className="btn btn-ghost text-xl">
+                    <Link to={"/"} className="btn btn-ghost text-xl">
                         <img className="h-10 w-10" src={logo} alt="" />
                         HERO.IO
                     </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link
-                        to={'https://github.com/nafiz512'}
+                        to={"https://github.com/nafiz512"}
                         className="btn bg-linear-to-r btn-primary from-[#632EE3] to-[#9F62F2] "
                     >
                         <IoLogoGithub className="" size={24} /> Contribute

@@ -1,7 +1,7 @@
-import React from 'react';
-import dicon from '../../assets/icon-downloads.png';
-import sicon from '../../assets/icon-ratings.png';
-import { Link } from 'react-router';
+import React from "react";
+import dicon from "../../assets/icon-downloads.png";
+import sicon from "../../assets/icon-ratings.png";
+import { Link } from "react-router";
 
 const App = ({ app }) => {
     const { image, title, downloads, ratingAvg } = app;
@@ -12,7 +12,7 @@ const App = ({ app }) => {
                     <img
                         src={image}
                         alt="apps img"
-                        className="h-[250px] w-full rounded-lg"
+                        className="h-[150px] w-full rounded-lg"
                     />
                 </div>
                 <div className="card-body">

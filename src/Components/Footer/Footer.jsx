@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-gradient-to-b from-[#040308] to-[#603e8f] text-white py-12 mt-20">
+            <footer className="bg-gradient-to-b px-[8%] from-[#040308] to-[#603e8f] text-white py-12 mt-20">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
                     {/* Brand Section */}
                     <div>
